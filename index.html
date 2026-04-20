@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aidan Sanchez | Projects</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/modal.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section class="projects-section" aria-labelledby="projects-heading">
+        <h1 id="projects-heading">Projects</h1>
+        <p class="projects-intro">
+          A selection of portfolio projects with short summaries, tools used,
+          and the specific problem each one is designed to solve.
+        </p>
+
+        <ul class="project-list">
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="0">
+                <div class="card-image">Project 1</div>
+                <div class="card-content">
+                  <h2 class="card-title">Weather Dashboard</h2>
+                  <p class="card-category">Web App</p>
+                  <p class="card-description">
+                    Displays live weather data in a clean, readable layout for
+                    quick everyday use.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="1">
+                <div class="card-image">Project 2</div>
+                <div class="card-content">
+                  <h2 class="card-title">Study Planner</h2>
+                  <p class="card-category">Productivity</p>
+                  <p class="card-description">
+                    Helps students organize tasks, track deadlines, and stay on
+                    top of coursework.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="2">
+                <div class="card-image">Project 3</div>
+                <div class="card-content">
+                  <h2 class="card-title">Budget Tracker</h2>
+                  <p class="card-category">Finance</p>
+                  <p class="card-description">
+                    Lets users monitor spending and savings with a simple,
+                    beginner-friendly interface.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="3">
+                <div class="card-image">Project 4</div>
+                <div class="card-content">
+                  <h2 class="card-title">Portfolio Website</h2>
+                  <p class="card-category">Frontend</p>
+                  <p class="card-description">
+                    Presents projects and skills in a clean, scannable format
+                    for employers and internships.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="4">
+                <div class="card-image">Project 5</div>
+                <div class="card-content">
+                  <h2 class="card-title">Road Trip Planner</h2>
+                  <p class="card-category">JavaScript</p>
+                  <p class="card-description">
+                    Calculates fuel needs, trip cost, and gas stops for longer
+                    travel plans.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="5">
+                <div class="card-image">Project 6</div>
+                <div class="card-content">
+                  <h2 class="card-title">Theme Toggle UI</h2>
+                  <p class="card-category">Interaction Design</p>
+                  <p class="card-description">
+                    Improves usability by allowing users to switch between light
+                    and dark themes.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <dialog id="project-modal" class="project-modal" tabindex="-1">
+      <button
+        type="button"
+        id="modal-close"
+        class="modal-close"
+        aria-label="Close project details"
+      >
+        ×
+      </button>
+
+      <div class="modal-image" id="modal-image" aria-hidden="true"></div>
+      <h2 id="modal-title" class="modal-title"></h2>
+      <p id="modal-details" class="modal-details"></p>
+      <a
+        id="modal-link"
+        class="modal-link"
+        href="#"
+        target="_blank"
+        rel="noopener noreferrer"
+      ></a>
+    </dialog>
+  </body>
+</html>
