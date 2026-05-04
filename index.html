@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aidan Sanchez | Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/modal.js" defer></script>
+  </head>
+
+  <body class="dark">
+    <header class="site-header">
+      <nav aria-label="Primary navigation">
+        <a class="site-logo" href="#home">Aidan Sanchez</a>
+
+        <ul class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="theme-toggle" type="button">🌙 Switch to Light Mode</button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="hero-content">
+          <p class="eyebrow">Computer Science Student</p>
+          <h1>Aidan G. Sanchez</h1>
+          <p class="hero-text">
+            I build clean, practical web and software projects focused on
+            usability, problem solving, and real-world applications.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary-button" href="#projects">View Projects</a>
+            <a class="button secondary-button" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="content-section">
+        <h2>About</h2>
+        <p>
+          I am a Computer Science student at the University of Montana with a
+          concentration in Software Engineering. I am interested in web
+          development, JavaScript, Python, data analysis, and AI-related tools.
+          I enjoy building projects that solve practical problems and are easy
+          for users to understand.
+        </p>
+      </section>
+
+      <section
+        id="projects"
+        class="projects-section content-section"
+        aria-labelledby="projects-heading"
+      >
+        <h2 id="projects-heading">Featured Projects</h2>
+        <p class="projects-intro">
+          A few selected projects that show my work with JavaScript, APIs,
+          frontend development, and practical problem solving.
+        </p>
+
+        <ul class="project-list">
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="0">
+                <div class="card-image">
+                  <img
+                    src="./images/weather-dashboard.gif"
+                    alt="Weather dashboard project preview"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Weather Dashboard</h3>
+                  <p class="card-category">JavaScript • API</p>
+                  <p class="card-description">
+                    Displays live Missoula weather data using the National
+                    Weather Service API.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="1">
+                <div class="card-image">
+                  <img
+                    src="./images/theme-toggle.gif"
+                    alt="Theme toggle project preview"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Theme Toggle UI</h3>
+                  <p class="card-category">DOM • Interaction</p>
+                  <p class="card-description">
+                    Lets users switch between light and dark themes using
+                    JavaScript and CSS variables.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="2">
+                <div class="card-image">
+                  <img
+                    src="./images/road-trip-planner.gif"
+                    alt="Road trip planner project preview"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Road Trip Planner</h3>
+                  <p class="card-category">JavaScript Logic</p>
+                  <p class="card-description">
+                    Calculates total distance, fuel needed, trip cost, and gas
+                    stop estimates.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <button type="button" class="project-card" data-index="3">
+                <div class="card-image">
+                  <img
+                    src="./images/project-modal-portfolio.gif"
+                    alt="Project modal portfolio preview"
+                  />
+                </div>
+                <div class="card-content">
+                  <h3 class="card-title">Project Modal Portfolio</h3>
+                  <p class="card-category">HTML • CSS • JS</p>
+                  <p class="card-description">
+                    Uses project cards and a modal window to show short,
+                    scannable project details.
+                  </p>
+                </div>
+              </button>
+            </article>
+          </li>
+        </ul>
+      </section>
+
+      <section id="skills" class="content-section">
+        <h2>Skills</h2>
+
+        <ul class="skills-list">
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flask</li>
+          <li>Git & GitHub</li>
+          <li>Pandas</li>
+          <li>NumPy</li>
+        </ul>
+      </section>
+
+      <section id="contact" class="content-section contact-section">
+        <h2>Contact</h2>
+        <p>
+          Feel free to reach out if you want to connect, collaborate, or learn
+          more about my work.
+        </p>
+
+        <ul class="contact-list">
+          <li>
+            <a href="#home">Email</a>
+          </li>
+          <li>
+            <a href="#home">GitHub</a>
+          </li>
+          <li>
+            <a href="#home">LinkedIn</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Aidan Sanchez</p>
+    </footer>
+
+    <dialog id="project-modal" class="project-modal" tabindex="-1">
+      <button
+        type="button"
+        id="modal-close"
+        class="modal-close"
+        aria-label="Close project details"
+      >
+        ×
+      </button>
+
+      <div class="modal-image" id="modal-image" aria-hidden="true"></div>
+      <h2 id="modal-title" class="modal-title"></h2>
+      <p id="modal-details" class="modal-details"></p>
+      <a id="modal-link" class="modal-link" href="#"></a>
+    </dialog>
+  </body>
+</html>
